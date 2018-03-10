@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    </script>
+</head>
+<body>
+    <div class="screens" id="screen2">
+    
+        <div id="player-icon">
+            <svg viewBox="0 0 24 24" id="notplaying">
+                <path fill="#6A6A6A" d="M7,9V15H11L16,20V4L11,9H7Z" />
+            </svg>
+            
+            <svg viewBox="0 0 24 24" id="playing">
+                <path fill="#F44336" d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z" />
+            </svg>
+        </div>
+        
+        <div id="sounds-container">
+            <div class="sound">
+                <audio
+                    class="player"
+                    src="sound/bell.mp3">
+                </audio>
+                
+                <svg viewBox="0 0 24 24">
+                    <path fill="#eeeeee" d="M15,18.66V22H5V18.66C8.09,20.45 11.91,20.45 15,18.66M22,4A2,2 0 0,0 20,2C19.69,2 19.39,2.07 19.12,2.21C18.82,2.36 18.56,2.58 18.36,2.85C17.72,3.75 17.94,5 18.85,5.64C19.18,5.87 19.59,6 20,6C20.08,6 20.16,6 20.24,6C21.97,10.43 20.66,15.46 17,18.5C16.68,18.75 16.35,19 16,19.22V21H17V19.74C20.14,17.5 22,13.86 22,10C22,8.5 21.72,7 21.17,5.62C21.69,5.24 22,4.64 22,4M18,10A8,8 0 0,1 10,18A8,8 0 0,1 2,10A8,8 0 0,1 10,2A8,8 0 0,1 18,10Z" />
+                </svg>
+            </div>
+            
+            <div class="sound">
+                <audio
+                    class="player"
+                    src="sound/airplane.mp3">
+                </audio>
+                
+                <svg viewBox="0 0 24 24">
+                    <path fill="#eeeeee" d="M2.5,19H21.5V21H2.5V19M22.07,9.64C21.86,8.84 21.03,8.36 20.23,8.58L14.92,10L8,3.57L6.09,4.08L10.23,11.25L5.26,12.58L3.29,11.04L1.84,11.43L3.66,14.59L4.43,15.92L6.03,15.5L11.34,14.07L15.69,12.91L21,11.5C21.81,11.26 22.28,10.44 22.07,9.64Z" />                </svg>
+                </svg>
+            </div>
+            
+            <div class="sound">
+                <audio
+                    class="player"
+                    src="sound/truck.mp3">
+                </audio>
+                
+                <svg viewBox="0 0 24 24">
+                    <path fill="#eeeeee" d="M18,18.5A1.5,1.5 0 0,1 16.5,17A1.5,1.5 0 0,1 18,15.5A1.5,1.5 0 0,1 19.5,17A1.5,1.5 0 0,1 18,18.5M19.5,9.5L21.46,12H17V9.5M6,18.5A1.5,1.5 0 0,1 4.5,17A1.5,1.5 0 0,1 6,15.5A1.5,1.5 0 0,1 7.5,17A1.5,1.5 0 0,1 6,18.5M20,8H17V4H3C1.89,4 1,4.89 1,6V17H3A3,3 0 0,0 6,20A3,3 0 0,0 9,17H15A3,3 0 0,0 18,20A3,3 0 0,0 21,17H23V12L20,8Z" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="screens" id="screen1">
+        <h1>Sound Board</h1>
+        
+        <div id="logo">
+            <svg viewBox="0 0 24 24">
+                <path fill="#F44336" d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z" />
+            </svg>
+        </div>
+        
+        <div class="footer">
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="#eeeeee" d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" />
+            </svg>
+            
+            <h3>Slide up to Start</h3>
+        </div>
+    </div>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

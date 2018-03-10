@@ -1,0 +1,79 @@
+/**/
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Roboto", sans-serif;
+    color: #eeeeee;
+    
+    margin: 0px auto;
+}
+
+.screens {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    
+    text-align: center;
+    background-color: #212121;
+}
+
+#screen2 {
+    background-color: #424242;
+}
+
+.screens h1 {
+    margin: 30px 0px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+}
+
+#sounds-container {
+    position: absolute;
+    bottom: 50px;
+}
+
+.sound {
+    width: 24vw;
+    height: 24vw;
+    border-radius: 50%;
+    background-color: #2196F3;
+    display: inline-block;
+    margin: 0px 5vw;
+}
+
+.sound svg {
+    width: 16vw;
+    height: 16vw;
+    padding: 4vw;
+}
